@@ -1,13 +1,9 @@
-name: Publication Article 5x par Semaine
+name: Publication Article Bi-hebdomadaire
 
 on:
   schedule:
-    # Exécution 5 fois par semaine : du lundi au vendredi à 7h00 UTC (8h00 heure de Paris en hiver)
-    - cron: '0 8 * * 1'  # Lundi
-    - cron: '0 8 * * 2'  # Mardi
-    - cron: '0 8 * * 3'  # Mercredi
-    - cron: '0 8 * * 4'  # Jeudi
-    - cron: '0 8 * * 5'  # Vendredi
+    # Exécution 2 fois par semaine : mardi et vendredi à 7h00 UTC (8h00 heure de Paris en hiver)
+    - cron: '0 7 * * 2'  # Mardi
   
   # Permet aussi de lancer manuellement depuis l'interface GitHub
   workflow_dispatch:
